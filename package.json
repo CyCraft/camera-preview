@@ -1,0 +1,51 @@
+{
+  "name": "@capacitor-community/camera-preview",
+  "version": "2.0.0",
+  "description": "Camera preview",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf './dist'",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "author": "Ariel Hernandez Musa",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "3.1.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "3.1.1",
+    "@capacitor/ios": "3.1.1",
+    "typescript": "^3.9.5",
+    "rimraf": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorCommunityCameraPreview.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capacitor-community/camera-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/capacitor-community/camera-preview/issues"
+  }
+}

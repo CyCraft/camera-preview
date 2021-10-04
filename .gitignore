@@ -1,0 +1,10 @@
+node_modules/
+ios/Pods/
+.DS_Store
+.idea/
+*.iml
+build/
+.gradle
+android/.gradle
+dist/
+.DS_Store
